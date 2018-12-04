@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+// BG Colors
+$base-color: #3a78ff;
+$secondary-color: #f7f9fd;
+$tertiary-color: #1d222b;
+$footer-sub: #161a21;
+
+// Font Colors
+$base-font-color: #656d7a;;
+$heading-color: #293340;
+
+// Font Size
+$base-font-size: 15px;
+$h1-font-size: 80px;
+$h2-font-size: 30px;
+$h3-font-size: 24px;
+$h4-font-size: 18px;
+$h5-font-size: 16px;
+
+// Font Family
+$base-font: Roboto;
+
+body {
+    font-family: $base-font;
+    font-size: $base-font-size;
+    color: $base-font-color;
+    line-height: 24px;
+    letter-spacing: 0;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+h2 {
+    font-size: $h2-font-size;
+}
+h3 {
+    font-size: $h3-font-size;
+}
+h4 {
+    font-size: $h4-font-size;
+}
+h5 {
+    font-size: $h5-font-size;
+}
+
+a {
+    text-decoration: none;
+    color: $base-color;
+
+    &:hover {
+        color: $tertiary-color;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.white-clr {
+    color: #ffffff;
+}
+
+.full-width {
+    transition: opacity .5s ease;
+    overflow: hidden;
+}
+
+.button {
+    text-align: center;
+    margin: 30px 0px 0px;
+    height: 48px;
+    min-width: 180px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 46px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0);
+    display: inline-block;
+    transition: all .2s ease, color 0s;
+}
+
+.flipboxes {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    transition: opacity .5s ease;
+    overflow: hidden;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.flipbox {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+
+    @media (min-width: 1200px) {
+        width: 25%;
+    }
+
+    &-front {
+        background-color: $base-color;
+        min-height: 350px;
+        height: auto;
+        border: 0px solid $base-color;
+        border-radius: 0px;
+    }
+    &-alt {
+        background-color: $secondary-color;
+        border: 0px solid $secondary-color;
+    }
+    &-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    &-icon img {
+        width: 150px;
+        display: inline-block;
+        text-align: center;
+    }
+    &-title {
+        margin-bottom: 12px;
+        font-size: $h4-font-size;
+        letter-spacing: 0px;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &-content p {
+        font-size: 15px;
+        letter-spacing: 0px;
+        line-height: 24px;
+        text-transform: none;
+        font-weight: 400;
+    }
+
+    &-back {
+        display: none;
+    }
+}
+
+.spotlight {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 1280px;
+    padding-top: 80px;
+    padding-right: 10%;
+    padding-bottom: 80px;
+    padding-left: 10%;
+
+    &-inner {
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+    }
+    &-image {
+        margin-bottom: 35px;
+    }
+    &-desc p {
+        text-align: center;
+    }
+    &-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media (min-width: 480px) {
+            flex-direction: row;
+        }
+    }
+
+    .subheadline {
+        line-height: 24px;
+        text-align: center;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0px;
+        margin: 0;
+    }
+
+    .headline {
+        line-height: 1.2em;
+        text-align: center;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 0px;
+        margin-top: 10px;
+    }
+
+    figure {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        max-width: 100%;
+
+        img {
+            height: auto;
+            max-width: 100%;
+            vertical-align: top;
+        }
+    }
+
+    .divider {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+    }
+
+    &-logo--inner {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    &-logo {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+
+        @media (min-width: 480px) {
+            width: calc((100% / 3) - 10px);
+        }
+
+        img {
+            width: 200px;
+        }
+    }
+}
+
+.blog {
+
+    &-inner {
+        display: flex;
+        flex-flow: row wrap;
+        position: relative;
+        overflow: hidden;
+    }
+    &-card {
+        width: 100%;
+        position: relative;
+        min-height: 1px;
+
+        @media (min-width: 768px) {
+            width: calc(100% / 3);
+        }
+    }
+    &-thumbnail {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+
+        a {
+            
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            transform: scale(1);
+            transform-style: preserve-3d;
+        }
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        transition: all .2s ease-in-out;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.8) 85%, rgba(0, 0, 0, 0.8) 100%);
+        color: $secondary-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        overflow: hidden;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    &-title {
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &-info {
+        margin-top: 5px;
+        line-height: 19px;
+    }
+    h2 a {
+        color: $secondary-color;
+
+        &:hover {
+            color: $base-color;
+        }
+    }
+}
+
+footer {
+    background-color: $tertiary-color;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 300;
+    padding: 30px;
+    box-sizing: border-box;
+
+    h4 {
+        font-weight: 300;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+
+    &-card {
+        width: 100%;
+
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+        @media (min-width: 1200px) {
+            width: 25%;
+        }
+    }
+}

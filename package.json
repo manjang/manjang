@@ -1,0 +1,32 @@
+{
+  "name": "manjang",
+  "version": "1.0.0",
+  "description": "hey, my name is Buba Manjang. I am a Software Developer with over 5 years of experience in all facets of web and mobile development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manjang/manjang.git"
+  },
+  "keywords": [
+    "Buba",
+    "Manjang",
+    "Software",
+    "Development",
+    "Mobile",
+    "Entrepreneur",
+    "Technology"
+  ],
+  "author": "Buba Manjang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manjang/manjang/issues"
+  },
+  "homepage": "https://github.com/manjang/manjang#readme",
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
