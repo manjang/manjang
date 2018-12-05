@@ -76,6 +76,18 @@ a {
       padding: 12px 15px;
       margin: 5px; }
 
+.hero-inner {
+  text-align: center;
+  padding-bottom: 20px; }
+
+.hero-headline {
+  font-size: 70px;
+  margin: 0;
+  line-height: 68px; }
+
+.hero-btn a {
+  border-color: #3a78ff; }
+
 .flipboxes {
   position: relative;
   display: flex;
