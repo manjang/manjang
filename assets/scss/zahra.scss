@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
 
 // BG Colors
 $base-color: #3a78ff;
@@ -303,6 +303,7 @@ a {
     &-info {
         margin-top: 5px;
         line-height: 19px;
+        font-weight: 300;
     }
     h2 a {
         color: $secondary-color;
@@ -316,7 +317,7 @@ a {
 footer {
     background-color: $tertiary-color;
     font-size: 14px;
-    color: #ffffff;
+    color: $base-color;
     line-height: 16px;
     text-align: center;
     letter-spacing: 2px;
@@ -335,6 +336,8 @@ footer {
 
     &-card {
         width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
 
         @media (min-width: 768px) {
             width: 50%;
@@ -342,5 +345,20 @@ footer {
         @media (min-width: 1200px) {
             width: 25%;
         }
+
+        img {
+            width: 45px;
+        }
+
+        a {
+            color: $secondary-color;
+            line-height: 20px;
+            font-weight: 100;
+        }
+    }
+    &-sub {
+        margin-top: 20px;
+        color: $secondary-color;
+        font-weight: 100;
     }
 }
