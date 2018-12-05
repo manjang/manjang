@@ -86,6 +86,41 @@ a {
     transition: all .2s ease, color 0s;
 }
 
+.header {
+    width: calc(100% - 20px);
+    max-width: 1200px;
+    margin: 10px auto;
+
+    &-inner {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .logo {
+        width: 20%;
+        max-width: 120px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .nav {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        &-inner {
+
+        }
+        &-link {
+            padding: 12px 15px;
+            margin: 5px;
+        }
+    }
+}
+
 .flipboxes {
     position: relative;
     display: flex;
@@ -239,7 +274,7 @@ a {
         }
 
         img {
-            width: 200px;
+            width: 140px;
         }
     }
 }
