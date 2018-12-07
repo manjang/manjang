@@ -295,7 +295,7 @@ footer {
       .footer-card {
         width: 25%; } }
     .footer-card img {
-      width: 45px; }
+      width: 33px; }
     .footer-card a {
       color: #f7f9fd;
       line-height: 20px;
@@ -304,3 +304,114 @@ footer {
     margin-top: 20px;
     color: #f7f9fd;
     font-weight: 100; }
+
+.about {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 1280px;
+  padding-top: 60px;
+  padding-right: 10%;
+  padding-bottom: 80px;
+  padding-left: 10%; }
+  .about-content {
+    font-weight: 100;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 27px; }
+  .about-headline {
+    letter-spacing: 1px;
+    line-height: 27px; }
+  .about-subheadline {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 22px 0; }
+
+.services {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 25px 0 0; }
+  .services-inner {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1280px;
+    padding-left: 40px;
+    padding-right: 40px; }
+    @media (max-width: 768px) {
+      .services-inner {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .services-headline {
+    text-align: center;
+    font-weight: 300; }
+  .services-subheadline {
+    text-align: center;
+    font-weight: 100; }
+
+.service-headline {
+  text-align: center;
+  font-weight: 300; }
+
+.service-cards {
+  display: flex;
+  flex-flow: row wrap; }
+
+.service-card {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 30px 20px;
+  background-color: rgba(29, 34, 43, 0.8);
+  color: #f7f9fd;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0px; }
+  .service-card:hover {
+    background-color: #1d222b;
+    transition: .5s ease-out; }
+  @media (min-width: 768px) {
+    .service-card {
+      width: 50%; } }
+  @media (min-width: 1200px) {
+    .service-card {
+      width: calc(100% / 3); } }
+
+.service-icon img {
+  width: 125px; }
+
+.service-content {
+  font-weight: 100;
+  letter-spacing: .5px; }
+
+.clients-inner {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1280px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding: 35px 0; }
+
+.clients-headline {
+  text-align: center;
+  font-weight: 300; }
+
+.clients-logo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box; }
+
+.clients-logo a {
+  display: block;
+  margin: 0 15px; }
+
+.clients-logo img {
+  width: 115px; }
+
+.client-logo {
+  display: flex;
+  align-items: center; }
